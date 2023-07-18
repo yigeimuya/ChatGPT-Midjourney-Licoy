@@ -220,7 +220,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "**使用说明**\n\n- 直接输入问题开始对话。\n\n- 输入 /mj + 空格 + 提示词 开始绘画，建议使用英文。\n\n- 示例AI绘画提示词：'''/mj a dog'''",
+    BotHello: "**使用说明**\n\n- 直接输入问题开始对话。\n\n- 输入 /mj + 空格 + 提示词 开始绘画，建议使用英文。\n\n- 示例AI绘画提示词：'''/mj a dog'''\n\n- 点此访问:[Midjourney Web](https://mj.mikoo.top/)",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
