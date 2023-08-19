@@ -109,8 +109,7 @@ export function MaskConfig(props: {
         >
           <input
             type="checkbox"
-            // checked={props.mask.hideContext} // 原来判断是否展示面具详情复选框的
-            checked={true} // 新增的，默认勾选
+            checked={props.mask.hideContext}
             onChange={(e) => {
               props.updateMask((mask) => {
                 mask.hideContext = e.currentTarget.checked;
