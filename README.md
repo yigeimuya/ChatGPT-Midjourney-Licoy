@@ -17,6 +17,7 @@
 ## 功能支持
 > 🍭 PRO版本支持更强大的功能，**宝塔5分钟部署**，配置超简单，强大的在线后台管理及配置框架让你丝滑体验，**占用内存不到100M**，**包含对话+绘画账号池支持等等**，支持高并发：[💥 点我立即查看及体验PRO版本](https://github.com/Licoy/ChatGPT-Midjourney-Pro)，**最低1C1G的服务器就能流畅运行**。
 
+### 已支持
 - [x] 原`ChatGPT-Next-Web`所有功能
 - [x] Midjourney `Imgine` 想象
 - [x] Midjourney `Upscale` 放大
@@ -31,19 +32,24 @@
 - [x] 绘图进度百分比、实时图像显示
 - [x] 自定义Discord的API、CDN、Websocket支持
 - [x] 自身内部支持 Midjourney 服务，无需任何第三方依赖
+### 即将支持
+- [ ] 支持Midjourney外部中转站API可选支持
+- [ ] 支持图像R2存储
+- [ ] 支持对话模型多模态支持
+- [ ] 中转GPTs支持
 
 ## 参数说明
 ### MJ_SERVER_ID
-Midjourney服务器ID
+Discord 服务器ID
 ### MJ_CHANNEL_ID
-Midjourney频道ID
+Discord 频道ID
 ### MJ_USER_TOKEN
-Midjourney用户Token
+Discord 用户Token
 ### MJ_DISCORD_PROXY
-Discord代理域名，默认为：`https://discord.com`
+Discord 代理域名，默认为：`https://discord.com`
 ### MJ_DISCORD_WSS_PROXY
 Discord Websocket代理域名，默认为：`wss://gateway.discord.gg`
-### MJ_DISCORD_WSS_PROXY
+### MJ_DISCORD_CDN_PROXY
 Discord CDN代理域名，默认为：`https://cdn.discordapp.com`
 ### CODE
 （可选）设置页面中的访问密码
@@ -59,12 +65,14 @@ docker run -d -p 3000:3000 \
    -e MJ_SERVER_ID="" \
    -e MJ_CHANNEL_ID="" \
    -e MJ_USER_TOKEN="" \
-   licoy/chatgpt-midjourney:v3.2.0
+   licoy/chatgpt-midjourney:v3.2.3
 ```
 ### Vercel
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLicoy%2FChatGPT-Midjourney&env=OPENAI_API_KEY&env=MJ_SERVER_ID&env=MJ_CHANNEL_ID&env=MJ_USER_TOKEN&env=CODE&project-name=chatgpt-midjourney&repository-name=ChatGPT-Midjourney)
 ### Railway
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/1g6vDL?referralCode=vvEj-K)
+### Sealos
+[![](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://cloud.sealos.io/?openapp=system-template%3FtemplateName%3Dchatgpt-midjourney)
 ### 手动部署
 - clone本项目到本地
 - 安装依赖
